@@ -67,7 +67,7 @@ def login():
       print str(i) + '/' + str(len(pass_list))
       try:
          print("Wait!..")
-(
+
          print '\n'
          print '[+] This Account Has Been Hacked Password :' + password + '     ^_^'
          break
