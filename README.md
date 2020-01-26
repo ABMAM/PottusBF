@@ -1,3 +1,4 @@
 # PottusBF
 
-simple gmail bruteforcer created by Pottus
+
+simple Facebook bruteforcer created by Pottus
