@@ -1,4 +1,4 @@
 # PottusBF
 
 
-simple Facebook bruteforcer created by Pottus
+Pottus Facebook bruteforcer V.6
